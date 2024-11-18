@@ -33,9 +33,6 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -55,10 +52,12 @@
           </figcaption>
       </figure>
   
-      <div class="w-viewport text-md-center text-sm-start mx-5 py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, natus veniam incidunt obcaecati illum ipsa similique laboriosam debitis, quod sint, iste itaque magni velit reiciendis tenetur cumque. Aut molestiae perferendis nostrum voluptates, mollitia eaque aspernatur? Quas esse omnis non nesciunt soluta excepturi, aperiam fugiat! Officiis distinctio quasi nesciunt dignissimos ad?</div>
+      <div class="w-viewport text-md-center text-sm-start py-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, autem quos. Accusantium, natus veniam incidunt obcaecati illum ipsa similique laboriosam debitis, quod sint, iste itaque magni velit reiciendis tenetur cumque. Aut molestiae perferendis nostrum voluptates, mollitia eaque aspernatur? Quas esse omnis non nesciunt soluta excepturi,  aperiam fugiat! Officiis distinctio quasi nesciunt dignissimos ad?
+      </div>
     </section>
     <section class="container text-center my-5">
-      <div class="row align-items-center mx-5 mt-5 p-1">
+      <div class="row align-items-center mt-5 p-1">
         <div class="col-6 bg-info rounded p-5" style="--bs-bg-opacity:.7">
           Orange
         </div>
@@ -83,22 +82,22 @@
     </section>
 
     <section class="container d-flex justify-content-between align-items-center mx-auto mt-5 px-5">
-      <div class="p-3 bg-primary">
+      <div class="p-3 bg-primary hover">
         item1
       </div>
-      <div class="p-3 bg-info">
+      <div class="p-3 bg-info hover">
         item2
       </div>
-      <div class="p-3 bg-danger">
+      <div class="p-3 bg-danger hover">
         item3
       </div>
     </section>
 
-    <section class="container d-flex">
-      <div class="text-center my-5 px-5 w-5">
+    <section class="container d-flex border border-2 my-5 g-1">
+      <div class="text-center my-5 px-5">
         <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni vel nemo, ex exercitationem debitis est fuga cupiditate quis quisquam quasi aspernatur necessitatibus, sapiente esse nostrum sit aliquid veritatis natus veniam.</p>
       </div>
-      <div class="text-center my-5 px-5 w-5">
+      <div class="text-center my-5 px-5">
         <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro eveniet cumque ipsa soluta molestias labore eaque autem dolorum obcaecati ipsam cum unde neque, hic reprehenderit placeat similique omnis optio illo.</p>
       </div>
     </section>
@@ -106,7 +105,7 @@
     <section class="container">
       <div class="table-responsive">
         <table class="table table-sm mx-auto table-striped table-hover caption-top">
-          <caption>list of users</caption>
+          <caption class="text-center">List of users</caption>
           <thead class="table-dark">
             <tr>
               <th scope="col">First</th>
@@ -132,6 +131,60 @@
           </tbody>
         </table>
       </div>
+    </section>
+
+    <section class="container mt-5">
+      <lebel for="exampleDataList" class="form-label">Datalist example</lebel>
+      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+      <datalist id="datalistOptions">
+        <option value="San Francisco">
+        <option value="New York">
+        <option value="Seattle">
+        <option value="Los Angeles">
+        <option value="Chicago">
+      </datalist>
+    </section>
+
+    <section class="container">
+      <form action="">
+        <div class=" d-inline-block mt-3">
+          <lebel for="name" class="form-level">Name</lebel>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mt-3">
+          <lebel for="email" class="form-level d-block">Email</lebel>
+          <input type="email" class="form-cntrol" id="email" required>
+        </div>
+        <div class="mt-3">
+          <lebel for="password" class="form-level d-block">Password</lebel>
+          <input type="password" class="form-cntrol" id="password" required>
+        </div>
+        <div class="form-check mt-3">
+          <lebel for="checkbox" class="form-check-lebel">I agree to the terms and conditions</lebel>
+          <input class="form-check-input" type="radio" id="checkbox" name="flexRadioDefault" required>
+        </div>
+        <div class="form-check mt-3">
+          <lebel for="checkbox" class="form-check-lebel">I don't agree to the terms and conditions</lebel>
+          <input class="form-check-input" type="radio" id="checkbox" name="flexRadioDefault" required>
+        </div>
+        <div class="mt-3">
+          <button type="submit" class="btn btn-info">Submit Your Info</button>
+        </div>
+        <div class="mt-3">
+          <form class="d-flex" role="search" action=""></form>
+          <lebel for="additional email" class="form-lebel d-block">Additional email</lebel>
+          <input class="form-control1" type="email" id="additional email" placeholder="Type your another email" required>
+          <button type="submit" class="btn btn-outline-success">For Query</button>
+        </div>
+        <div claas="mt-3">
+          <lebel for="customRange2" class="form-lebel">Range</lebel>
+          <input type="range" class="form-range" min="0" max="20" id="customRange2">
+        </div>
+        <div class="mt-3">
+          <lebel for="formfile" class="form-lebel">upload file</lebel>
+          <input class="form-control" type="file" id="formfile"> 
+        </div>
+      </form>
     </section>
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
