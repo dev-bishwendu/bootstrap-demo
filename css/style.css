@@ -12,3 +12,20 @@ caption{
     font-weight: bold;
     cursor: pointer;
 }
+
+.g-5{
+    gap: 10px;
+}
+
+.z-1:hover{
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transform: translateY(-10px) transiton: .5s;
+}
+
+@media {
+    .z-1:hover:hover{
+        transform: translateY(-10px);
+    }
+}
