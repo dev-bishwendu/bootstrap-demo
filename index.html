@@ -193,7 +193,7 @@
       <div class="w-50 accordion" id="#Accordion">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
               Accordion Item #1
             </button>
           </h2>
@@ -228,7 +228,15 @@
           </div>
         </div>
       </div>
-    </section>   
+    </section>
+    <button type="button" class="btn btn-info rounded positon-relative sticky-bottom">
+      New massage
+      <span class="positon-absolute top=0 start=100 translate-middle badge rounded bg-primary">
+        99+
+        <span class="visually-hidden">unread messages</span>
+      </span>
+    </button>
+
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -14,15 +14,16 @@ caption{
 }
 
 .g-5{
-    gap: 10px;
+    gap: 40px;
 }
 
 .z-1:hover{
     color: black;
     font-weight: bold;
     cursor: pointer;
-    transform: translateY(-10px) transiton: .5s;
+    transform: translateY(-10px);
 }
+
 
 @media {
     .z-1:hover:hover{
