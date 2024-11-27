@@ -36,6 +36,12 @@ caption{
     color: rgb(72, 12, 12);
 }
 
+.card-flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
 @media {
     .z-1:hover:hover{
         transform: translateY(-10px);

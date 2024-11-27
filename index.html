@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-md-top">
+    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-md-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,6 +41,7 @@
         </div>
       </div>
     </nav>
+
     <section class="container my-5">
       <h1 class="text-center display-1">Hello, world!</h1>
       <figure class="text-center blockquote py-5 mx-5">
@@ -147,48 +148,51 @@
       </div>
     </section>
 
-    <section class="container">
-      <form class="w-50" action="">
-        <div class="mt-3">
-          <lebel for="name" class="form-level">Name</lebel>
-          <input type="text" class="form-control" id="name" required>
-        </div>
-        <div class="mt-3">
-          <lebel for="email" class="form-level d-block">Email</lebel>
-          <input type="email" class="form-cntrol" id="email" required>
-        </div>
-        <div class="mt-3">
-          <lebel for="password" class="form-level d-block">Password</lebel>
-          <input type="password" class="form-cntrol" id="password" required>
-        </div>
-        <div class="form-check mt-3">
-          <lebel for="checkbox" class="form-check-lebel">I agree to the terms and conditions</lebel>
-          <input class="form-check-input" type="radio" id="checkbox" name="flexRadioDefault" required>
-        </div>
-        <div class="form-check mt-3">
-          <lebel for="checkbox" class="form-check-lebel">I don't agree to the terms and conditions</lebel>
-          <input class="form-check-input" type="radio" id="checkbox" name="flexRadioDefault" required>
-        </div>
-        <div class="mt-3">
-          <button type="submit" class="btn btn-info">Submit Your Info</button>
-        </div>
-        <div class="mt-3">
-          <lebel for="additional email" class="form-lebel">Another email</lebel>
-          <div class="input-group">
-            <input type="email" class="form-control" placeholder="Another email" aria-label="additional email" aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary rounded" type="button" id="button-addon2">for energency contact</button>
+    <section class="container mt-5">
+      <div class="w-50">
+        <form action="">
+          <div class="mt-3">
+            <lebel for="name" class="form-level">Name</lebel>
+            <input type="text" class="form-control" id="name" required>
           </div>
-        </div>
-        <div claas="mt-3">
-          <lebel for="customRange2" class="form-lebel">Range</lebel>
-          <input type="range" class="form-range" min="0" max="20" id="customRange2">
-        </div>
-        <div class="mt-3">
-          <lebel for="formfile" class="form-lebel">upload file</lebel>
-          <input class="form-control" type="file" id="formfile"> 
-        </div>
-      </form>
+          <div class="mt-3">
+            <lebel for="email" class="form-level d-block">Email</lebel>
+            <input type="email" class="form-cntrol" id="email" required>
+          </div>
+          <div class="mt-3">
+            <lebel for="password" class="form-level d-block">Password</lebel>
+            <input type="password" class="form-cntrol" id="password" required>
+          </div>
+          <div class="form-check mt-3">
+            <lebel for="checkbox" class="form-check-lebel">I agree to the terms and conditions</lebel>
+            <input class="form-check-input" type="radio" id="checkbox" name="flexRadioDefault" required>
+          </div>
+          <div class="form-check mt-3">
+            <lebel for="checkbox" class="form-check-lebel">I don't agree to the terms and conditions</lebel>
+            <input class="form-check-input" type="radio" id="checkbox" name="flexRadioDefault" required>
+          </div>
+          <div class="mt-3">
+            <button type="submit" class="btn btn-info">Submit Your Info</button>
+          </div>
+          <div class="mt-3">
+            <lebel for="additional email" class="form-lebel">Another email</lebel>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Another email" aria-label="additional email" aria-describedby="button-addon2">
+              <button class="btn btn-outline-secondary rounded" type="button" id="button-addon2">for energency contact</button>        
+            </div>
+          </div>
+          <div claas="mt-3">
+            <lebel for="customRange2" class="form-lebel">Range</lebel>
+            <input type="range" class="form-range" min="0" max="20" id="customRange2">
+          </div>
+          <div class="mt-3">
+            <lebel for="formfile" class="form-lebel">upload file</lebel>
+            <input class="form-control" type="file" id="formfile"> 
+          </div>
+        </form>
+      </div>
     </section>
+
     <section class="container mt-5 d-flex justify-content-between g-5">
       <div class="w-25 accordion" id="#Accordion">
         <div class="accordion-item">
@@ -311,9 +315,42 @@
           <p>Try scrolling the rest of the page to see this option in action.</p>
         </div>
       </div>
-
     </section>
-    <button type="button" class="btn btn-info rounded positon-relative sticky-bottom">
+
+    <section class="container mt-5 card-flex">
+      <div class="card">
+        <div class="card-header">
+          <img src="./asset/gettyimages-1451456915-2048x2048.jpg" style="width: 40%; height: 20%;" alt="">
+          <h2>Card title</h2>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <button>Go somewhere</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="./asset/gettyimages-1451456915-2048x2048.jpg" style="width: 40%; height: 20%;" alt="">
+          <h2>Card title</h2>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <button class="btn btn-info text-white  ">Go somewhere</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="./asset/gettyimages-1451456915-2048x2048.jpg" style="width: 40%; height: 20%;" alt="">
+          <h2>Card title</h2>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <button>Go somewhere</button>
+        </div>
+      </div>
+    </section>
+
+    <button type="button" class="btn btn-info rounded positon-fixed sticky-bottom">
       New massage
       <span class="positon-absolute top=0 start=100 translate-middle badge rounded bg-primary">
         99+
