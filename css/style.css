@@ -42,6 +42,17 @@ caption{
     gap: 30px;
 }
 
+.card-body{
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.card-body button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 @media {
     .z-1:hover:hover{
         transform: translateY(-10px);
